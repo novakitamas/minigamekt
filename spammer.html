@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Click Race</title>
+  <link rel="stylesheet" href="spammer.css">
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    #player1, #player2 {
+      height: 100%;
+      float: left;
+    }
+    #player1 {
+      background-color: blue;
+      width: 50%;
+    }
+    #player2 {
+      background-color: red;
+      width: 50%;
+    }
+    #start-button {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 50px;
+      background-color: black;
+      padding: 16px;;
+      color: white;
+      cursor: pointer;
+    }
+    #player-inputs {
+      position: absolute;
+      top: 20%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      user-select: none;
+    }
+    #player-inputs input[type=text] {
+      font-size: 24px;
+      padding: 8px;
+      margin: 80px;
+    }
+  </style>
+</head>
+<body>
+  <div id="head">
+  <header>
+		<nav>
+			<h1 class="minigame">MiniGames</h1>
+			<ul>
+				<li><a class="btn" href="Index.html">Home</a></li>
+				<li><a class="btn" href="ponggg.html">Pong</a></li>
+        <li><a class="btn" href="aimteszt.html">Aim teszt</a></li>
+        <li><a class="btn" href="spammer.html">Spammer</a></li>
+				<li><a class="btn" href="#">About</a></li>
+				<li><a class="btn" href="#">Contact</a></li>
+        <li><button class="btn" id="darkmode" onclick="darkmode()">Sárga/Fekete</button></li>
+			</ul>
+		</nav>
+	</header>
+</div>
+  <div id="player1"></div>
+  <div id="player2"></div>
+  <div id="countdown"></div>
+  <div id="player-inputs">
+    <input type="text" id="player1-name" placeholder="Enter Player 1 Name">
+    <input type="text" id="player2-name" placeholder="Enter Player 2 Name">
+  </div>
+  <button id="start-button">Start</button>
+  <script src="spammer.js"></script>
+  <script src="hangvezerles.js"></script>
+  <div id="status"></div>
+</body>
+<link rel="stylesheet" href="header.css">
+</html>
