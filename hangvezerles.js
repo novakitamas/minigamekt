@@ -84,8 +84,7 @@ if ("webkitSpeechRecognition" in window) {
 
   // elindítás
   document.addEventListener("keydown", (event) => {
-    if (event.code === "Backquote") {
-      // change "Space" to the key you want to use
+    if (event.code === "Digit4") {
       toggleRecognition();
     }
   });

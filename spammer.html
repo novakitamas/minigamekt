@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html>
-<head>
+<head lang="hu">
   <title>Click Race</title>
   <link rel="stylesheet" href="spammer.css">
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Press+Start+2P" />
+  <link rel="stylesheet" href="header.css">
   <style>
     html, body {
       height: 100%;
@@ -29,7 +31,6 @@
       font-size: 50px;
       background-color: black;
       padding: 16px;;
-      color: white;
       cursor: pointer;
     }
     #player-inputs {
@@ -38,11 +39,14 @@
       left: 50%;
       transform: translate(-50%, -50%);
       user-select: none;
+      max-width: 500%;
     }
     #player-inputs input[type=text] {
       font-size: 24px;
       padding: 8px;
-      margin: 80px;
+      margin: 2vmin;
+      border-radius: 15px;
+      color: black;
     }
   </style>
 </head>
@@ -50,15 +54,13 @@
   <div id="head">
   <header>
 		<nav>
-			<h1 class="minigame">MiniGames</h1>
+			<a class="btnn" href="index.html"><img draggable="false" src="pics/favicon.jpeg" alt="" style="width: 80px;"></a>
 			<ul>
-				<li><a class="btn" href="Index.html">Home</a></li>
 				<li><a class="btn" href="ponggg.html">Pong</a></li>
-        <li><a class="btn" href="aimteszt.html">Aim teszt</a></li>
+        <li><a class="btn" href="aimteszt.html">Célzás teszt</a></li>
         <li><a class="btn" href="spammer.html">Spammer</a></li>
-				<li><a class="btn" href="#">About</a></li>
-				<li><a class="btn" href="#">Contact</a></li>
-        <li><button class="btn" id="darkmode" onclick="darkmode()">Sárga/Fekete</button></li>
+				<li><a class="btn" href="#">Rólunk</a></li>
+        <li><a class="btn" id="darkmode" onclick="darkmode()">Sárga/Fekete</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -66,14 +68,16 @@
   <div id="player1"></div>
   <div id="player2"></div>
   <div id="countdown"></div>
+  <div id="a" style="display: none;">A</div>
+  <div id="l" style="display: none;">L</div>
   <div id="player-inputs">
-    <input type="text" id="player1-name" placeholder="Enter Player 1 Name">
-    <input type="text" id="player2-name" placeholder="Enter Player 2 Name">
+    <input type="text" id="player1-name" placeholder="Egyes játékos neve">
+    <input type="text" id="player2-name" placeholder="Kettes játékos neve">
   </div>
-  <button id="start-button">Start</button>
+  <button id="start-button" class="start-btn">Kezdés</button>
   <script src="spammer.js"></script>
   <script src="hangvezerles.js"></script>
+  <script src="nav.js"></script>
   <div id="status"></div>
 </body>
-<link rel="stylesheet" href="header.css">
 </html>
